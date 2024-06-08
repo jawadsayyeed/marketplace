@@ -1,19 +1,20 @@
-var phone = document.getElementById('phone'),
+var role = document.getElementById('role'),
+  phoneNumber = document.getElementById('phone'),
   address = document.getElementById('address'),
-  role = document.getElementById('role'),
-  labelPhone = document.querySelector('.lPhone'),
+  lPhone = document.querySelector('.lPhone'),
   lAddress = document.querySelector('.lAddress');
 
+// d-none
 role.addEventListener('change', () => {
-  if (role.value === 'Costumer') {
-    phone.classList.remove('d-none');
-    address.classList.remove('d-none');
-    labelPhone.classList.remove('d-none');
-    lAddress.classList.remove('d-none');
+  if (role.value == 'Customer') {
+    document.getElementById('phone').classList.toggle('d-none')
+    document.getElementById('address').classList.toggle('d-none')
+    document.querySelector('.lPhone').classList.toggle('d-none')
+    document.querySelector('.lAddress').classList.toggle('d-none')
   } else {
-    phone.classList.add('d-none');
-    address.classList.add('d-none');
-    labelPhone.classList.add('d-none');
-    lAddress.classList.add('d-none');
+    document.getElementById('phone').classList.toggle('d-none')
+    document.getElementById('address').classList.toggle('d-none')
+    document.querySelector('.lPhone').classList.toggle('d-none')
+    document.querySelector('.lAddress').classList.toggle('d-none')
   }
-});
+})
