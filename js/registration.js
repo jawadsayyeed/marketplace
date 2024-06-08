@@ -7,14 +7,14 @@ var role = document.getElementById('role'),
 // d-none
 role.addEventListener('change', () => {
   if (role.value == 'Customer') {
-    document.getElementById('phone').classList.toggle('d-none');
-    document.getElementById('address').classList.toggle('d-none');
-    document.querySelector('.lPhone').classList.toggle('d-none');
-    document.querySelector('.lAddress').classList.toggle('d-none');
+    document.getElementById('phone').classList.toggle('d-none')
+    document.getElementById('address').classList.toggle('d-none')
+    document.querySelector('.lPhone').classList.toggle('d-none')
+    document.querySelector('.lAddress').classList.toggle('d-none')
   } else {
-    document.getElementById('phone').classList.toggle('d-none');
-    document.getElementById('address').classList.toggle('d-none');
-    document.querySelector('.lPhone').classList.toggle('d-none');
-    document.querySelector('.lAddress').classList.toggle('d-none');
+    document.getElementById('phone').classList.toggle('d-none')
+    document.getElementById('address').classList.toggle('d-none')
+    document.querySelector('.lPhone').classList.toggle('d-none')
+    document.querySelector('.lAddress').classList.toggle('d-none')
   }
 })
