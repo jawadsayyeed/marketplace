@@ -4,7 +4,6 @@ var role = document.getElementById('role'),
   lPhone = document.querySelector('.lPhone'),
   lAddress = document.querySelector('.lAddress');
 
-// d-none
 role.addEventListener('change', () => {
   if (role.value == 'Customer') {
     document.getElementById('phone').classList.toggle('d-none');
